@@ -1,0 +1,45 @@
+
+
+
+
+<img src="https://th.bing.com/th/id/R.14ab0af50a9f9f3bd334dbc2dc8e4139?rik=PO7fuNYx6l8JLA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fWonderful-Nature-Colorful-Scene-HD.jpg&ehk=0HrJNBc%2bzz5o2AEdayde46yRrDdvVexZ3cYpe67%2bL%2fo%3d&risl=&pid=ImgRaw&r=0">
+<br>
+<div class="main-bg">
+    <!-- Login Form -->
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="card shadow">
+            <div class="card-title text-center border-bottom">
+              <h2 class="p-3">Login</h2>
+            </div>
+            <div class="card-body">
+              <form [formGroup]="form">
+                <div class="form-group"></div>
+                <div class="mb-4">
+                  <label for="username" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="username" formControlName="email" />
+                </div>
+                <div class="mb-4">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" formControlName="password" />
+                </div>
+                <div class="mb-4">
+                  <input type="checkbox" class="form-check-input" id="remember" />
+                  <label for="remember" class="form-label">Remember Me</label>
+                </div>
+                <div class="d-grid">
+                <button class="btn text-dark main-bg" [routerLink]="['/registration']" [queryParams]="{ }">Registration</button><br>
+                
+
+                <button class="btn text-dark main-bg" (click)="userLogin()">Login</button>
+                
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+

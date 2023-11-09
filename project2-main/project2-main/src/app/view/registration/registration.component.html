@@ -1,0 +1,42 @@
+
+<!-- Registration-->
+<div class="container"></div>
+    <div class="row justify-content-center mt-5"></div>
+      <div class="col-lg-6 col-md-6 col-sm-6"></div>
+        <div class="card shadow"></div>
+          <div class="card-title text-center border-bottom">
+            <h4 class="p-3">Registration</h4>
+          </div>
+          <div class="card-body">
+            <form [formGroup] ="form">
+              <div class="form-group"></div>
+              <div class="mb-4">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstname"
+                 formControlName="firstName" >
+                 
+  </div>
+              <div class="mb-4">
+                <label for="username" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" formControlName="lastName" >
+                
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" formControlName="email" >
+              
+            </div>
+              <div class="mb-4">
+                <label for="password" class="form-label">New password</label>
+                <input type="password" class="form-control" id="newpassword" formControlName="newpassword" >
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label">Confirm password</label>
+                <input type="password" class="form-control" id="name" formControlName="confirmpassword" >
+              </div>
+              
+              <div class="mt-2">
+              <button class="btn text-dark main-bg" (click)="userRegistration()">Submit</button>
+            </div>
+          </form>
+            <div class="col-4"></div>
